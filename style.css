@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'VT323', monospace;
+    font-size: 62.5%;
 }
 
 .app-container {
@@ -59,7 +60,7 @@
     display: flex;
     justify-content: center;
     align-content:top;
-    font-size: 20px;
+    font-size: 3rem;
     color: rgb(32, 209, 112); 
 } 
 
@@ -75,12 +76,12 @@
 
 .signal{
     color: rgb(2, 233, 106);
-    font-size: 23px;
+    font-size: 2.2rem;
 }
 
 .pulse{
     color: rgb(2, 233, 106);
-    font-size: 14px;
+    font-size: 1.3rem;
     animation: pulse 1.3s linear infinite;
 }
 
