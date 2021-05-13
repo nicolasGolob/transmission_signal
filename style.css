@@ -16,7 +16,8 @@
     background-color: rgb(0, 0, 0);
 }
 
-/************************* Progress Bar  ************************/
+/************************* Progress Bar Part ************************/
+
  .progress-bar-container{
     grid-column: 4/8;
     grid-row: 5/6;
@@ -35,7 +36,6 @@
     border-radius: 30px;
     transition: .4s linear;
     transition-property: width, background-color;
-    
 }
 
 .progress-moved .progress-bar{
@@ -50,7 +50,7 @@
     100%{
         width:100%;
         background:rgb(1, 253, 115);
-        }
+    }
 }
 
 .transmission-message{
@@ -63,4 +63,82 @@
     color: rgb(32, 209, 112); 
 } 
 
- 
+ /************************* Signal Part **********************/
+
+ .signal-detected{
+    grid-column: 1/5;
+    grid-row: 10/-1;
+    align-items:center;
+    justify-content: left;
+    display: flex;
+}
+
+.signal{
+    color: rgb(2, 233, 106);
+    font-size: 23px;
+}
+
+.pulse{
+    color: rgb(2, 233, 106);
+    font-size: 14px;
+    animation: pulse 1.3s linear infinite;
+}
+
+ @keyframes pulse {
+    0%{
+        transform: scale(1.07);
+    }
+    70%{
+        transform: scale(1);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}   
+/* .text-terminal{
+    grid-column: 1/5;
+    grid-row: 8/-1;
+    color: rgb(2, 233, 106);
+    align-items:center;
+    justify-content: left;
+    display: flex;
+    font-size: 20px;
+}
+
+h1 span{
+    max-width: 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+@keyframes in {
+    from { max-width: 0; opacity: 0; }
+    25% { max-width: 1em; opacity: 0; }
+    to { max-width: 1em; opacity: 1; }
+  }
+  h1 span {
+    animation: in 1s;
+    animation-fill-mode: forwards;
+  }
+
+h1 span:nth-child(1){ animation-delay: 0s; }
+h1 span:nth-child(2){ animation-delay: 0.1s; }
+h1 span:nth-child(3){ animation-delay: 0.2s; }
+
+h1 span:nth-child(4){ animation-delay: 0.5s; }
+h1 span:nth-child(5){ animation-delay: 0.6s; }
+
+h1 span:nth-child(6){ animation-delay: 0.8s; }
+h1 span:nth-child(7){ animation-delay: 0.9s; }
+h1 span:nth-child(8){ animation-delay: 1s; }
+h1 span:nth-child(9){ animation-delay: 1.1s; }
+h1 span:nth-child(10){ animation-delay: 1.2s; }
+h1 span:nth-child(11){ animation-delay: 1.3s; }
+h1 span:nth-child(12){ animation-delay: 1.4s; }
+h1 span:nth-child(13){ animation-delay: 1.5s; }
+h1 span:nth-child(14){ animation-delay: 1.6s; }
+h1 span:nth-child(15){ animation-delay: 1.7s; }
+h1 span:nth-child(16){ animation-delay: 1.8s; }
+*/
